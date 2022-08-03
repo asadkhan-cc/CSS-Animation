@@ -1,0 +1,93 @@
+body {
+  box-sizing: border-box;
+}
+.ani {
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  color: azure;
+  text-align: center;
+  position: relative;
+
+  animation-name: example;
+  /* animation-delay: 2s; */
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+    left: -100px;
+    top: 0vh;
+  }
+  15% {
+    background-color: yellow;
+    left: 100vw;
+    transform: translate(-110%, 0);
+    top: 0px;
+  }
+  30% {
+    background-color: blue;
+    left: 100vw;
+    top: 100vh;
+    transform: translate(-110%, -110%);
+  }
+  45% {
+    background-color: green;
+    left: 0px;
+    top: 100vh;
+    transform: translate(0%, -110%);
+  }
+  60% {
+    background-color: violet;
+    left: 0px;
+    top: 50vh;
+    transform: translate(0%, -50%);
+  }
+  75% {
+    background-color: slateblue;
+    left: 45vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+  }
+  85% {
+    
+    background-color: saddlebrown;
+    transform: rotate(90deg);    
+    transform: translate(-50%, -50%);
+
+  }90% {
+    
+    background-color: saddlebrown;
+    transform: rotate(180deg);
+    margin-bottom: 50px;
+    margin-right: 50px;
+    /* transform: translate(-50%, -50%); */
+
+  }
+  95% {
+    
+    background-color: saddlebrown;
+    transform: rotate(270deg);   
+    /* transform: translate(-50%, -50%); */
+    margin-bottom: 50px;
+    margin-right: 50px;
+  }
+  99% {
+    
+    background-color: saddlebrown;
+    transform: rotate(360deg);  
+    /* transform: translate(-50%, -50%); */
+    margin-bottom: 50px;
+    margin-right: 50px;
+
+  }
+  100%{
+    left: 50vw;
+    top: 50vh;
+    background-color: saddlebrown;
+    transform: translate(-50%, -50%);
+
+  }
+}
